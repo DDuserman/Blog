@@ -1,0 +1,73 @@
+html
+    font-family: Arial;
+header
+    background: #444444;
+    display: flex;
+    justify-content: space-between;
+    div
+        .logo
+            padding: 0 35px;
+            border-right: 2px solid cyan;
+            margin: 10px 0;
+            img
+                height: 100px;
+                width: 120px;
+                border-radius: 95%;
+        :first-child
+            display: flex;
+        .encabezado
+            margin: 10px 0;
+            padding: 0 10px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            .titulo, .clase, .fuente
+                color: white;
+            .titulo
+                h2
+                    font-size: 18px;
+            .clase
+                margin-top: 5px;
+                h3
+                    font-size: 14px;
+                    font-style: italic;
+                    font-weight: bold;
+                    color: cyan;
+            .fuente
+                display: flex;
+                margin-top: 5px;
+                align-items: baseline;
+                p
+                    margin-right: 5px;
+                    cursor: pointer;
+                    color: orangered;
+                    :first-child
+                        font-size: 12px;
+                    :last-child
+                        font-size: 20px;
+    .avatar-publicar, avatar-publicar .avatar
+        display: flex;
+    .avatar-publicar
+        align-items: center;
+        .btn
+            background: orangered;
+            padding: 5px 15px;
+            p
+                color: white;
+                font-style: italic;
+        .avatar
+            align-items: center;
+            .menu
+                background: orangered;
+                height: fit-content;
+                padding: 5px 5px 5px 10px; 
+                p
+                    color: white;
+            .img-avatar
+                margin-right: -5px;
+                z-index: 1;
+                img
+                    height: 50px;
+                    width: 70px;
+                    border-radius: 50%;
+                    margin-left: -5px;

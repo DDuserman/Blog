@@ -1,28 +1,119 @@
+html{
+font-family: Arial;
+}
+
 header {
-    background: #444444;
-    display: flex;
-    justify-content: space-between;
+background: #444444;
+display: flex;
+justify-content: space-between;
 }
 
 header div .logo img {
-    height: 100px;
+height: 100px;
+width: 120px;
+border-radius: 95%;
+}
+
+header div .logo {
+padding: 0 35px;
+border-right: 2px solid cyan;
+margin: 10px 0;
 }
 
 header div:first-child {
-    display: flex;
+display: flex;
+}
+
+header div .encabezado {
+margin: 10px 0;
+padding: 0 10px;
+display: flex;
+flex-direction: column;
+justify-content: center;
 }
 
 header div .encabezado .titulo, 
 header div .encabezado .clase, 
 header div .encabezado .fuente {
-    color: white;
+color: white;
 }
 
-header .avatar-publicar, header .avatar-publicar .avatar {
-    display: flex;
+header div .encabezado .titulo h2{
+font-size: 18px;
+}
+
+header div .encabezado .clase {
+margin-top: 5px;
+}
+
+header div .encabezado .clase h3 {
+font-size: 14px;
+font-style: italic;
+font-weight: bold;
+color: cyan;
+}
+
+header div .encabezado .fuente {
+display: flex;
+margin-top: 5px;
+align-items: baseline;
+}
+
+header div .encabezado .fuente p {
+margin-right: 5px;
+cursor: pointer;
+color: orangered;
+}
+
+header div .encabezado .fuente p:first-child {
+font-size: 12px;
+}
+
+header div .encabezado .fuente p:last-child {
+font-size: 20px;
+}
+
+header .avatar-publicar,
+header .avatar-publicar .avatar {
+display: flex;
+}
+
+header .avatar-publicar {
+align-items: center;
+}
+
+header .avatar-publicar .btn {
+background: orangered;
+padding: 5px 15px;
+}
+
+header .avatar-publicar .btn p {
+color: white;
+font-style: italic; 
+}
+
+header .avatar-publicar .avatar {
+align-items: center;
+}
+
+header .avatar-publicar .avatar.menu {
+background: orangered;
+height: fit-content;
+padding: 5px 5px 5px 10px; 
+}
+
+header .avatar-publicar .avatar.menu p {
+color: white;
+}
+
+header .avatar-publicar .avatar .img-avatar {
+margin-right: -5px;
+z-index: 1;
 }
 
 header .avatar-publicar .avatar .img-avatar img {
-    height: 50px;
-    border-radius: 50%;
+height: 50px;
+width: 70px;
+border-radius: 50%;
+margin-left: -5px;
 }
