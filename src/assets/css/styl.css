@@ -1,84 +1,152 @@
 html {
   font-family: Arial;
 }
-header {
+html header {
   background: #444;
   display: flex;
   justify-content: space-between;
 }
-header div .logo {
+html header div .logo {
   padding: 0 35px;
   border-right: 2px solid #0ff;
   margin: 10px 0;
 }
-header div .logo img {
+html header div .logo img {
   height: 100px;
   width: 120px;
   border-radius: 95%;
 }
-header div :first-child {
-  display: flex;
-}
-header div .encabezado {
+html header div .encabezado {
   margin: 10px 0;
   padding: 0 10px;
   display: flex;
   flex-direction: column;
   justify-content: center;
 }
-header div .encabezado .titulo,
-header div .encabezado .clase,
-header div .encabezado .fuente {
+html header div .encabezado .titulo,
+html header div .encabezado .clase,
+html header div .encabezado .fuente {
   color: #fff;
 }
-header div .encabezado .titulo h2 {
+html header div .encabezado .titulo h2 {
   font-size: 18px;
 }
-header div .encabezado .clase {
+html header div .encabezado .clase {
   margin-top: 5px;
 }
-header div .encabezado .clase h3 {
+html header div .encabezado .clase h3 {
   font-size: 14px;
   font-style: italic;
   font-weight: bold;
   color: #0ff;
 }
-header div .encabezado .fuente {
+html header div .encabezado .fuente {
   display: flex;
   margin-top: 5px;
   align-items: baseline;
 }
-header div .encabezado .fuente p {
+html header div .encabezado .fuente p {
   margin-right: 5px;
   cursor: pointer;
   color: #ff4500;
 }
-header div .encabezado .fuente p :first-child {
+html header div .encabezado .fuente p:first-child {
   font-size: 12px;
 }
-header div .encabezado .fuente p :last-child {
+html header div .encabezado .fuente p:last-child {
   font-size: 20px;
 }
-header .avatar-publicar,
-header avatar-publicar .avatar {
+html header div:first-child {
   display: flex;
 }
-header .avatar-publicar {
+html header .avatar-publicar,
+html header .avatar-publicar .avatar {
+  display: flex;
+}
+html header .avatar-publicar {
   align-items: center;
 }
-header .avatar-publicar .btn {
+html header .avatar-publicar .btn {
   background: #ff4500;
   padding: 5px 15px;
 }
-header .avatar-publicar .btn p {
+html header .avatar-publicar .btn p {
   color: #fff;
   font-style: italic;
 }
-header .avatar-publicar .avatar {
+html header .avatar-publicar .avatar {
   align-items: center;
 }
-header .avatar-publicar .avatar .menu {
+html header .avatar-publicar .avatar .menu {
   background: #ff4500;
   height: fit-content;
   padding: 5px 5px 5px 10px;
+}
+html header .avatar-publicar .avatar .menu p {
+  color: #fff;
+}
+html header .avatar-publicar .avatar .img-avatar {
+  margin-right: -5px;
+  z-index: 1;
+}
+html header .avatar-publicar .avatar .img-avatar img {
+  height: 50px;
+  width: 50px;
+  border-radius: 50%;
+  margin-left: -5px;
+}
+html nav {
+  padding: 15px 0px;
+  background: #0ff;
+  box-shadow: 0px 3px 2px 0px rgba(0,0,0,0.2);
+}
+html nav ul {
+  display: flex;
+}
+html nav ul li {
+  margin-right: 35px;
+}
+html nav ul li a {
+  color: #fff;
+  text-decoration: none;
+  font-weight: bold;
+}
+html nav ul li:hover {
+  background: rgba(0,0,0,0.1);
+}
+html section article {
+  width: 45%;
+  border-bottom-left-radius: 16px;
+  border-bottom-right-radius: 16px;
+  box-shadow: 1px 5px 3px 1px rgba(0,0,0,0.5);
+}
+html section article .contenido {
+  border-bottom: 4px solid #0ff;
+  display: flex;
+}
+html section article .puntuacion {
+  display: flex;
+  justify-content: space-between;
+}
+html footer {
+  background: #dd4f24;
+  padding: 60px 0px;
+}
+html footer div {
+  display: flex;
+  justify-content: center;
+  text-align: center;
+}
+html footer div p {
+  display: flex;
+  flex-direction: column;
+  color: rgba(255,255,255,0.5);
+  font-weight: bold;
+}
+html footer div p span {
+  font-weight: normal;
+}
+html footer div p span::before,
+html footer div p span::after {
+  content: " - ";
 }

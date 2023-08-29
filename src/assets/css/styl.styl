@@ -1,73 +1,115 @@
 html
     font-family: Arial;
-header
-    background: #444444;
-    display: flex;
-    justify-content: space-between;
-    div
-        .logo
-            padding: 0 35px;
-            border-right: 2px solid cyan;
-            margin: 10px 0;
-            img
-                height: 100px;
-                width: 120px;
-                border-radius: 95%;
-        :first-child
-            display: flex;
-        .encabezado
-            margin: 10px 0;
-            padding: 0 10px;
-            display: flex;
-            flex-direction: column;
-            justify-content: center;
-            .titulo, .clase, .fuente
-                color: white;
-            .titulo
-                h2
-                    font-size: 18px;
-            .clase
-                margin-top: 5px;
-                h3
-                    font-size: 14px;
-                    font-style: italic;
-                    font-weight: bold;
-                    color: cyan;
-            .fuente
-                display: flex;
-                margin-top: 5px;
-                align-items: baseline;
-                p
-                    margin-right: 5px;
-                    cursor: pointer;
-                    color: orangered;
-                    :first-child
-                        font-size: 12px;
-                    :last-child
-                        font-size: 20px;
-    .avatar-publicar, avatar-publicar .avatar
+    header
+        background: #444444;
         display: flex;
-    .avatar-publicar
-        align-items: center;
-        .btn
-            background: orangered;
-            padding: 5px 15px;
-            p
-                color: white;
-                font-style: italic;
-        .avatar
+        justify-content: space-between;
+        div
+            .logo
+                padding: 0 35px;
+                border-right: 2px solid cyan;
+                margin: 10px 0;
+                img
+                    height: 100px;
+                    width: 120px;
+                    border-radius: 95%;
+            .encabezado
+                margin: 10px 0;
+                padding: 0 10px;
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                .titulo, .clase, .fuente
+                    color: white;
+                .titulo h2
+                    font-size: 18px;
+                .clase
+                    margin-top: 5px;
+                    h3
+                        font-size: 14px;
+                        font-style: italic;
+                        font-weight: bold;
+                        color: cyan;
+                .fuente
+                    display: flex;
+                    margin-top: 5px;
+                    align-items: baseline;
+                    p
+                        margin-right: 5px;
+                        cursor: pointer;
+                        color: orangered;
+                    p:first-child
+                        font-size: 12px;
+                    p:last-child
+                        font-size: 20px;
+        div:first-child
+                display: flex;
+        .avatar-publicar, .avatar-publicar .avatar
+            display: flex;
+        .avatar-publicar
             align-items: center;
-            .menu
+            .btn
                 background: orangered;
-                height: fit-content;
-                padding: 5px 5px 5px 10px; 
+                padding: 5px 15px;
                 p
                     color: white;
-            .img-avatar
-                margin-right: -5px;
-                z-index: 1;
-                img
-                    height: 50px;
-                    width: 70px;
-                    border-radius: 50%;
-                    margin-left: -5px;
+                    font-style: italic;
+            .avatar
+                align-items: center;
+                .menu
+                    background: orangered;
+                    height: fit-content;
+                    padding: 5px 5px 5px 10px; 
+                    p
+                        color: white;
+                .img-avatar
+                    margin-right: -5px;
+                    z-index: 1;
+                    img
+                        height: 50px;
+                        width: 50px;
+                        border-radius: 50%;
+                        margin-left: -5px;
+    nav
+        padding: 15px 0px
+        background: cyan
+        box-shadow: 0px 3px 2px 0px rgba(0,0,0,0.2)
+        ul
+            display: flex
+            li
+                margin-right: 35px
+                a
+                    color white
+                    text-decoration: none
+                    font-weight: bold
+            li:hover
+                background: rgba(0,0,0,0.1)
+    section
+        article
+            width: 45%
+            border-bottom-left-radius: 16px
+            border-bottom-right-radius: 16px
+            box-shadow: 1px 5px 3px 1px rgba(0,0,0,0.5)
+            .contenido
+                border-bottom: 4px solid cyan
+                display: flex
+            .puntuacion
+                display: flex
+                justify-content: space-between
+    footer
+        background: #dd4f24
+        padding: 60px 0px
+        div
+            display: flex
+            justify-content: center
+            text-align: center
+            p
+                display: flex
+                flex-direction: column
+                color: rgba(255,255,255,0.5)
+                font-weight: bold
+                span
+                    font-weight: normal
+                span::before, span::after
+                    content:" - "
+    
