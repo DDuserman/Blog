@@ -1,3 +1,6 @@
+//Aquí va el código de importación de fonts de los íconos
+//viene del comprimido de iconmoon "estilos.css"
+
 html
     font-family: Arial;
     header
@@ -49,11 +52,21 @@ html
         .avatar-publicar
             align-items: center;
             .btn
-                background: orangered;
-                padding: 5px 15px;
+                background: #ff4500;
+                padding: 5px 30px 5px 68px;
+                margin-right: -5px;
                 p
                     color: white;
                     font-style: italic;
+                    position: relative
+                    .ico
+                        position: absolute
+                        left: -60px
+                        top: -18px
+                    .ico::before
+                        font-family: "iconos"
+                        content: "\e908"    //aqui va el codigo del ícono
+                        font-size: 50px
             .avatar
                 align-items: center;
                 .menu
@@ -62,6 +75,11 @@ html
                     padding: 5px 5px 5px 10px; 
                     p
                         color: white;
+                        .ico::after
+                            font-family: "iconos"
+                            content: "\ea1c"   //aqui va el codigo del ícono
+                            display: inline-block
+                            transform: 
                 .img-avatar
                     margin-right: -5px;
                     z-index: 1;
